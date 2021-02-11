@@ -665,14 +665,14 @@ i{
 
 .intro .intro-title {
   color: #fff;
-  font-size: 2rem;
+  font-size: 5vw;
   font-family: Dosis; 
 }
 .Tagline {    
   display:flex;
   height: auto;
   justify-content:center;
-  font-size:40px;
+  font-size:2.5vw;
   font-family:monospace;
   padding-bottom: 8%;
   
@@ -761,12 +761,12 @@ i{
   color: #fff;
 }
 .buttons{
-  font-size: 25px;
+  font-size: 2vw;
   background-color:transparent;
   color: #007bff;
   height: auto;
   width:20ch;
-  border-radius: 50px;
+  border-radius: 4vw;
 }
 /*--------------------------------------------------------------
 # About
