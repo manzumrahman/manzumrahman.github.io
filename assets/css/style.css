@@ -522,11 +522,11 @@ i{
 
 .navbar-b.navbar-reduce {
   transition: all .5s ease-in-out;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   border-bottom: #0078ff;
   padding-top: 13px;
   padding-bottom: 13px;
-  border-bottom:#0078ff 2px solid;
+  border-bottom:#0078ff 3px solid;
 }
 
 .navbar-b.navbar-reduce .nav-link {
