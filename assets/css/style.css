@@ -677,7 +677,7 @@ i{
   }
 }
 .Tagline {    
-  /* display:flex; */
+  display:flex;
   height: auto;
   justify-content:center;
   font-size:2.5vw;
