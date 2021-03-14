@@ -127,10 +127,6 @@ i{
   margin-top: 4rem;
 }
 
-.about-info{
-  font-size: 1.2rem;
-  width:200%
-}
 /*--/ Title s /--*/
 .title-s {
   font-weight: 600;
@@ -205,6 +201,10 @@ i{
   color: rgb(0, 0, 0);
   align-items: center center;
   font-size: 1.4rem;
+}
+.socials .links{
+  font-size: 1.4rem;
+  color: #0078ff;
 }
 
 .socials a {
@@ -668,13 +668,27 @@ i{
   font-size: 5vw;
   font-family: Dosis; 
 }
+@media (max-width: 400px) {
+  .intro .intro-title {
+    font-size: 10vw;
+  }
+  span {
+    display: block;
+  }
+}
 .Tagline {    
-  display:flex;
+  /* display:flex; */
   height: auto;
   justify-content:center;
   font-size:2.5vw;
   font-family:monospace;
   padding-bottom: 8%;
+  
+}
+@media (max-width: 400px) {
+  .Tagline {
+    font-size: 4vw;
+  }
   
 }
 .Tagline span{
@@ -704,11 +718,6 @@ i{
   }
 }
 
-@media (min-width: 768px) {
-  .intro .intro-title {
-    font-size: 4.5rem;
-  }
-}
 
 .intro .intro-subtitle {
   font-size: 1.5rem;
@@ -768,6 +777,12 @@ i{
   width:20ch;
   border-radius: 4vw;
 }
+@media (max-width: 400px){
+  .buttons{
+    font-size: 6vw;
+    border-radius: 12vw;
+  }
+}
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -796,8 +811,23 @@ i{
 }
 
 .lead{
-  font-size: 1;
+  font-size: 1.5vw;
   font-weight: 400;
+}
+.about-info{
+  font-size: 1.5vw;
+  width:200%
+}
+@media (max-width: 500px){
+  .lead{
+    font-size: 5vw;
+    font-weight: 400;
+    justify-content: center;
+  }
+  .about-info{
+    font-size: 4.5vw;
+    width:200%
+  }
 }
 
 /*--------------------------------------------------------------
