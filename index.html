@@ -5,34 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manzum Rahman</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style_responsive.css">
-    <script src="https://kit.fontawesome.com/640625d85e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="hover-min.css">
+    <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style_responsive.css">
     
 </head>
 <body>
     <nav class="navbar">
-        <div class="navbar-brand"><a href="#">Manzum.</a></div>
-        <a href="#" class="toggle-button"><i class="fa-solid fa-bars"></i></a>
+        <!-- <div class="navbar-brand"><a href="#" class=" cssanimation leMagnify sequence">Manzum.</a></div> -->
+        <div class="navbar-brand animate__animated animate__tada"><a href="#" class="">Manzum.</a></div>
+        <a href="#" class="toggle-button">
+            <i class="fa-solid fa-bars toggle-button-main"></i>
+        </a>
         <div class="navbar-nav">
-            <a href="#">Intro</a>
-            <a href="#">About</a>
-            <a href="#">Skills</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
+            <a href="#" class="hvr-underline-from-left">Intro</a>
+            <a href="#" class="hvr-underline-from-left">About</a>
+            <a href="#" class="hvr-underline-from-left">Skills</a>
+            <a href="#" class="hvr-underline-from-left">Portfolio</a>
+            <a href="#" class="hvr-underline-from-left">Blog</a>
+            <a href="#" class="hvr-underline-from-left">Contact</a>
             </ul>
         </div>
     </nav>
     <section class="intro">
         <div class="container">
-            <div class="intro-title">
+            <div class="intro-title cssanimation pushReleaseFromLeft">
                 Assalamualaikum,<br>I'm <span>Md Manzum Rahman</span>
             </div>
-            <div class="intro-tagline">A Cadet and a <span>Programmer</span> :)</div>
-            <a href="#" class="intro-button">Get in Touch</a>
+            <div class="intro-tagline cssanimation typing">A Cadet and a <span>Programmer</span> :)</div>
+            <a href="#" class="intro-button hvr-radial-out">Get in Touch</a>
         </div>
-        <div class="container">
+        <div class="container" data-aos="fade-left">
             <div class="frame">
                 <div class="image"><img src="img/profile.jpg" alt=""></div>
             </div>
@@ -42,7 +51,7 @@
     <section class="about">
         <div class="title">About Me</div>
         <div class="about-content">
-            <div class="frame">
+            <div class="frame" data-aos="fade-right">
                 <div class="image"><img src="img/about.png" alt=""></div>
             </div>
             <div class="content">
@@ -59,7 +68,7 @@
     <section class="skills">
         <div class="title">Skills</div>
         <div class="skills-content">
-            <div class="row">
+            <div class="row hvr-push " data-aos="flip-left">
                 <i class="fas fa-palette"></i>
                 <div class="topic">Frontend</div>
                 <p>HTML</p>
@@ -68,7 +77,7 @@
                 <p>React</p>
                 <p>&nbsp;</p>
             </div>
-            <div class="row">
+            <div class="row hvr-push" data-aos="flip-left">
                 <i class="fas fa-laptop-code"></i>
                 <div class="topic">Backend</div>
                 <p>Flask</p>
@@ -77,7 +86,7 @@
                 <p>SQlite</p>
                 <p>&nbsp;</p>
             </div>
-            <div class="row">
+            <div class="row hvr-push" data-aos="flip-left">
                 <i class="fas fa-code"></i>
                 <div class="topic">Languages</div>
                 <p>Python</p>
@@ -86,7 +95,7 @@
                 <p>C#</p>
                 <p>&nbsp;</p>
             </div>
-            <div class="row">
+            <div class="row hvr-push" data-aos="flip-left">
                 <i class="fas fa-robot"></i>
                 <div class="topic">AI / ML</div>
                 <p>Still Learning :)</p>
@@ -95,7 +104,7 @@
                 <p>&nbsp;</p>
                 <p>&nbsp;</p>
             </div>
-            <div class="row tools">
+            <div class="row hvr-push tools" data-aos="flip-left">
                 <i class="fas fa-tools"></i>
                 <div class="topic">Tools</div>
                 <p>Pycharm</p>
@@ -109,7 +118,7 @@
     <section class="portfolio" id="portfolio">
         <div class="title">Portfolio</div>
         <div class="portfolio-content">
-            <div class="portfolio-project" >
+            <div class="portfolio-project hvr-grow-shadow" data-aos="zoom-in-right">
                 <div class="img-box">
                     <img src="img/work-1.PNG" alt="">
                 </div>
@@ -126,7 +135,7 @@
                     </div>
                 </div>
             </div>
-            <div class="portfolio-project">
+            <div class="portfolio-project hvr-grow-shadow" data-aos="zoom-in-right">
                 <div class="img-box">
                     <img src="img/work-2.PNG" alt="">
                 </div>
@@ -143,7 +152,7 @@
                     </div>
                 </div>
             </div>
-            <div class="portfolio-project">
+            <div class="portfolio-project hvr-grow-shadow" data-aos="zoom-in-right">
                 <div class="img-box">
                     <img src="img/work-3.PNG" alt="">
                 </div>
@@ -160,7 +169,7 @@
                     </div>
                 </div>
             </div>
-            <div class="portfolio-project">
+            <div class="portfolio-project hvr-grow-shadow" data-aos="zoom-in-right">
                 <div class="img-box">
                     <img src="img/work-4.PNG" alt="">
                 </div>
@@ -177,7 +186,7 @@
                     </div>
                 </div>
             </div>
-            <div class="portfolio-project">
+            <div class="portfolio-project hvr-grow-shadow" data-aos="zoom-in-right">
                 <div class="img-box">
                     <img src="img/work-5.jpg" alt="">
                 </div>
@@ -194,7 +203,7 @@
                     </div>
                 </div>
             </div>
-            <div class="portfolio-project">
+            <div class="portfolio-project hvr-grow-shadow" data-aos="zoom-in-right">
                 <div class="img-box">
                     <img src="img/work-6.PNG" alt="">
                 </div>
@@ -211,7 +220,7 @@
                     </div>
                 </div>
             </div>
-            <div class="portfolio-project">
+            <div class="portfolio-project hvr-grow-shadow" data-aos="zoom-in-right">
                 <div class="img-box">
                     <img src="img/work-7.PNG" alt="">
                 </div>
@@ -228,7 +237,7 @@
                     </div>
                 </div>
             </div>
-            <div class="portfolio-project">
+            <div class="portfolio-project hvr-grow-shadow" data-aos="zoom-in-right">
                 <div class="img-box">
                     <img src="img/work-8.PNG" alt="">
                 </div>
@@ -245,7 +254,7 @@
                     </div>
                 </div>
             </div>
-            <div class="portfolio-project">
+            <div class="portfolio-project hvr-grow-shadow" data-aos="zoom-in-right">
                 <div class="img-box">
                     <img src="img/work-9.PNG" alt="">
                 </div>
@@ -262,7 +271,7 @@
                     </div>
                 </div>
             </div>
-            <div class="portfolio-project">
+            <div class="portfolio-project hvr-grow-shadow" data-aos="zoom-in-right">
                 <div class="img-box">
                     <img src="img/work-10.PNG" alt="">
                 </div>
@@ -284,13 +293,13 @@
     <section class="contact">
         <div class="title">Get in Touch</div>
         <div class="links">
-            <a href="#"><i class="fa-brands fa-facebook"></i><br>Facebook</a>
-            <a href="#"><i class="fa-brands fa-instagram"></i><br>Instagram</a>
-            <a href="#"><i class="fa-brands fa-github"></i><br>Github</a>
-            <a href="#"><i class="fa-brands fa-x-twitter"></i><br>Twitter</a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i><br>LinkedIn</a>
-            <a href="#"><i class="fa-brands fa-dev"></i><br>Dev.to</a>
-            <a href="#"><i class="fa-solid fa-envelope"></i><br>E-Mail</a></div>
+            <a href="#"><i class="fa-brands fa-facebook hvr-buzz" data-aos="flip-right"></i><br>Facebook</a>
+            <a href="#"><i class="fa-brands fa-instagram hvr-buzz" data-aos="flip-right"></i><br>Instagram</a>
+            <a href="#"><i class="fa-brands fa-github hvr-buzz" data-aos="flip-right" data-aos="flip-right"></i><br>Github</a>
+            <a href="#"><i class="fa-brands fa-x-twitter hvr-buzz" data-aos="flip-right"></i><br>Twitter</a>
+            <a href="#"><i class="fa-brands fa-linkedin hvr-buzz" data-aos="flip-right"></i><br>LinkedIn</a>
+            <a href="#"><i class="fa-brands fa-dev hvr-buzz" data-aos="flip-right"></i><br>Dev.to</a>
+            <a href="#"><i class="fa-solid fa-envelope hvr-buzz" data-aos="flip-right"></i><br>E-Mail</a></div>
     </section>
     <footer class="footer">
         <p>
@@ -301,5 +310,11 @@
         </p>
     </footer>
 </body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"></script>
 <script src="script.js"></script>
+<script src="https://kit.fontawesome.com/640625d85e.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </html>

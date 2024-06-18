@@ -15,6 +15,7 @@ a{
     color: unset;
 }
 .navbar{
+    height: 10vh;
     padding: 1rem 3vw 1rem 7.5vw ;
     position:sticky;
     background-color: #151515;
@@ -24,6 +25,7 @@ a{
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid #EEEEEE;
+    z-index: 5;
 }
 .navbar-brand{
     font-size: 1.7rem;
@@ -33,9 +35,11 @@ a{
 .toggle-button{
     display: none;
     font-size: 1.7rem;
+    position: fixed;
+    top: 1rem;
+    right: 5vw;
 }
 .navbar-nav{
-    display: flex;
     display: flex;
     text-transform: uppercase;
     font-weight: 500;
@@ -45,6 +49,10 @@ a{
     color: #EEEEEE;
     padding: 1rem;
     display: block;
+}
+.navbar-nav a:hover{
+    font-weight: 800;
+    color: #A91D3A;
 }
 .intro{
     display: flex;
@@ -57,6 +65,7 @@ a{
     font-family: Dosis;
     font-size: 4.5vw;
 }
+
 .intro-title span{
     color: #A91D3A;
 }
@@ -69,6 +78,21 @@ a{
 }
 .intro-tagline span{
     color: #A91D3A;
+}
+.typing {
+    width: 24ch;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid #EEEEEE;
+    animation: typing 5s steps(24, end), cursor 0.5s steps(12, end) infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+}
+@keyframes cursor {
+    0%{ border-color:#EEEEEE}
+    50% { border-color: transparent }
+    100%{ border-color:#EEEEEE}
 }
 .intro-button{
     font-size: 1.5vw;
@@ -269,3 +293,6 @@ a{
 .footer i{
     color: red;
 }
+
+
+

@@ -23,6 +23,19 @@
     .navbar-nav{
         display: none;
     }
+    .navbar.active{
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        z-index: 5;
+    }
+    .navbar-nav.active{
+        display: flex;
+        flex-direction: column;
+    }
 }
 @media only screen and (max-width: 775px) {
     .portfolio-content{
@@ -66,5 +79,21 @@
 @media only screen and (max-width: 500px) {
     .about .content{
         font-size: 1rem;
+    }
+    .intro .frame{
+        width: 79vw;
+        height:105vw;
+    }
+    .intro img{
+        width:75vw;
+        height:100vw;
+    }
+    .about .frame{
+        width: 79vw;
+        height:61vw ;
+    }
+    .about img{
+        width:75vw;
+        height:56.35vw;
     }
 }
