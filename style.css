@@ -70,22 +70,32 @@ a{
     color: #A91D3A;
 }
 .intro-tagline{
+    white-space: nowrap;
+    width: 27ch;
     margin: 1rem 0;
     margin-bottom: 2rem;
     font-family: 'Ubuntu Mono', monospace;
     font-weight: 100;
     font-size:2.5vw;
+    overflow: hidden;
+    animation: typing 5s steps(27) forwards, blink 0.5s 13;
 }
 .intro-tagline span{
     color: #A91D3A;
 }
-.typing {
-    width: 24ch;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 1px solid #EEEEEE;
-    animation: typing 5s steps(24, end), cursor 0.5s steps(12, end) infinite;
+@keyframes typing {
+    0% { width:0ch }
+    100% { width:27ch }
 }
+@keyframes blink {
+    0%,100% {
+      border-right:2px solid transparent;
+    }
+    50% {
+      border-right:2px solid rgb(255, 255, 255);
+    }
+  }
+
 @keyframes typing {
     from { width: 0 }
 }
@@ -105,6 +115,7 @@ a{
     width: 13vw;
     height: 3vw;
     border-radius: 2rem;
+    overflow: hidden;
 }
 .intro .frame{
     display: flex;

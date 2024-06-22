@@ -20,6 +20,9 @@
     .toggle-button{
         display: block;
     }
+    .navbar{
+        height: unset;
+    }
     .navbar-nav{
         display: none;
     }
