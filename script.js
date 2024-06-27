@@ -1,7 +1,14 @@
 var loader = document.getElementById('preloader')
+var navbar_brand = document.getElementsByClassName('navbar-brand')[0]
+var intro_title = document.getElementsByClassName('intro-title')[0]
+var intro_tagline = document.getElementsByClassName('intro-tagline')[0]
+var navbar_brand = document.getElementsByClassName('navbar-brand')[0]
+
 window.addEventListener('load', function () {
     loader.style.display = "none"
-
+    navbar_brand.classList.add("animate__animate__tada")
+    intro_title.classList.add("animate__backInLeft")
+    intro_tagline.classList.add("typing")
 })
 
 
@@ -17,4 +24,4 @@ toggle_button.addEventListener('click', () => {
 
 })
 
-
+AOS.init();
